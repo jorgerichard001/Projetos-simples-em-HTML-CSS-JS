@@ -1,0 +1,105 @@
+/* cores utilizadas na produção do conversor para caso seja necessarios alterar
+cores seja mais facil */
+:root{
+    --background-central: #1B262C;
+    --background-conteudo: #0F4C75;
+    --cor-conversor: #3282B8;
+    --cor-hover: #27638b;
+
+}
+body {
+    background-color: var(--background-central);
+    font-family: 'Roboto', sans-serif;
+}
+/* backgroun principal onde vai ter os conversores colocando 
+seus efeitos e delimitação de tamanho*/
+.background-conversor {
+    background-color: var(--background-conteudo);
+    border-radius: 30px;
+ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+
+}
+
+/* essa parte é a área do conversor em si e alinhamentos dos
+ itens contidos nele e animações para os mesmos */
+.conteudo-conversor {
+    max-width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+    
+    background-color: var(--cor-conversor);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.conteudo-conversor:hover{
+    box-shadow: 5px 5px 10px var(--background-central);
+}
+
+.conteudo-conversor h1 {
+    color: #072227;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px var(--background-conteudo);
+    
+}
+
+.conversor {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* aqui vem a parte de controle dos input  */
+.campos-input {
+    max-width: 50%;
+    display: flex;
+}
+
+
+.campos-input span {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--background-central);
+
+}
+.conversor input {
+    margin: 0 15px 15px;
+    border: none;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+input:hover{
+    box-shadow: 5px 5px 10px var(--background-central);
+}
+
+/* parte de style para o botão que está na pagina */
+.button-conversor {
+    padding: 5px 5px 5px 5px;
+    max-width: 200px;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    
+  
+    background-color: var(--cor-conversor);
+    color: var(--background-central);
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.button-conversor:hover {
+    box-shadow: 5px 5px 10px var(--background-central);
+    background-color: var(--cor-hover);
+}
+
+
+
