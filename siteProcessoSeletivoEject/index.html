@@ -7,9 +7,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="style.css">
-        
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        
+    
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
 
         <title>Clinica Sorte</title>
     </head>
@@ -107,10 +109,24 @@
         <section class="section-parceiros">
             <h1>Parceiros</h1>
             <div class="section-parceiros-carrosel">
-                <div>
-                    <img src="imagens/logo-eject.svg" alt="">
-                    <img src="imagens/blood-pressure-gf924214ba_1920.jpg" alt="">
-                </div>
+                <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="imagens/mobile_logo.png" alt=""></div>
+      <div class="swiper-slide"><img src="imagens/ufrn-logo.png" alt=""></div>
+      <div class="swiper-slide"><img class="section-parceiros-carrosel-logo-eject" src="imagens/logo-eject.svg" alt=""></div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+  </div>
             </div>
         </section>
         <section id="contato" class="section-form">
@@ -132,9 +148,10 @@
                         </div>
                         
                     </form>
-                    <div class="main-service-table-button">
-                        <button><a href="">Enviar</a></button>
-                    </div>
+                    
+                </div>
+                <div class="main-service-table-button">
+                    <button><a href="">Enviar</a></button>
                 </div>
             </div>
         </section>
@@ -142,8 +159,7 @@
             <span>ProSEmpre BETA - EJECT © 2022.1.</span>
         </footer>
 
-        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="inicial.js"></script>
-      
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="carrosel.js"></script>
     </body>
 </html>
