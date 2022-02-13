@@ -280,7 +280,10 @@ header h1{
 }
 
 .section-parceiros-carrosel img {
-    max-width: 5em;
+    max-width: 20em;
+}
+.section-parceiros-carrosel-logo-eject {
+    width: 20em;
 }
 
 .section-form {
@@ -313,10 +316,13 @@ header h1{
 }
 
 .section-form-background-form {
-
     max-width: 60em;
     margin: 0 auto;
     padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 
@@ -360,9 +366,54 @@ footer {
     font-size: 1em;
 }
 
+.swiper-slide{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-.swiper {
-    width: 600px;
-    height: 300px;
+@media (max-width: 900px) {
+    .nav{
+        flex-wrap: wrap;
+    }
+    .header-transparent {
+        gap: 20em;
+    }
+    .about-us {
+        flex-wrap: wrap;
+    }
+    .about-us-text {
+        margin: 0 auto;
+    }
+    .about-us-img {
+        margin: 0 auto;
+    }
+    .about-us-img img {
+        max-width: 30em;
+    }
+    .main-service-table-conteudo {
+        display: block;
+    }
+
+    .form-imput {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-transparent {
+        gap: 2em;
+    }
+    
+    .about-us-text {
+        margin: 1em;
+    }
+    .about-us-img {
+        margin: 0 auto;
+    }
+    .about-us-img img {
+        max-width: 25em;
+    }
 }
